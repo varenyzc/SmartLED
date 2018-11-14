@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">智能灯</string>
+    <string name="title_home">主页</string>
+    <string name="title_data">数据报表</string>
+    <string name="title_setting">设置</string>
+    <string name="app_id">5baa40b1</string>
+</resources>

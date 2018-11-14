@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.qmuiteam:qmui-1.0.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.qmuiteam/qmui/1.0.6/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.qmuiteam/qmui/1.0.6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.qmuiteam/qmui/1.0.6/ece8bc7fc7b025562252e459a148bff5ddd290af/qmui-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

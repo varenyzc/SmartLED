@@ -1,0 +1,47 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <style name="NavigationTheme" parent="QMUI.Compat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="qmui_config_color_blue">@color/colorPrimary</item>
+        <item name="qmui_topbar_title_color">@color/white</item>
+        <item name="qmui_topbar_subtitle_color">@color/white</item>
+        <item name="qmui_topbar_text_btn_color_state_list">@color/white</item>
+        <item name="qmui_topbar_height">48dp</item>
+        <item name="qmui_topbar_image_btn_height">48dp</item>
+        <item name="qmui_round_btn_bg_color">@color/colorPrimary</item>
+        <item name="qmui_round_btn_border_color">@color/colorPrimary</item>
+        <item name="qmui_round_btn_text_color">@color/colorPrimary</item>
+        <item name="qmui_content_spacing_horizontal">20dp</item>
+        <item name="qmui_content_padding_horizontal">@dimen/qmui_content_spacing_horizontal</item>
+    </style>
+
+    <style name="noActionBar" parent="QMUI.Dialog.FullWidth.NoAnimation">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="qmui_config_color_blue">@color/colorPrimary</item>
+        <item name="qmui_topbar_title_color">@color/white</item>
+        <item name="qmui_topbar_subtitle_color">@color/white</item>
+        <item name="qmui_topbar_text_btn_color_state_list">@color/white</item>
+        <item name="qmui_topbar_height">48dp</item>
+        <item name="qmui_topbar_image_btn_height">48dp</item>
+        <item name="qmui_round_btn_bg_color">@color/colorPrimary</item>
+        <item name="qmui_round_btn_border_color">@color/colorPrimary</item>
+        <item name="qmui_round_btn_text_color">@color/colorPrimary</item>
+        <item name="qmui_content_spacing_horizontal">20dp</item>
+        <item name="qmui_content_padding_horizontal">@dimen/qmui_content_spacing_horizontal</item>
+    </style>
+
+
+</resources>

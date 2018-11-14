@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/qmui_topbar_height"
+            app:qmui_topbar_bg_color="@color/colorPrimary"
+            app:qmui_topbar_need_separator="true" />
+
+        <!-- 开启/关闭(布尔可写) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:text="是否关闭红色灯" />
+
+            <Switch
+                android:id="@+id/sw_bool_LED_OnOff"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textOff="关闭"
+                android:textOn="开启" />
+
+        </RelativeLayout>
+
+
+        <!-- LED颜色(枚举可写) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:text="LED颜色" />
+
+            <Spinner
+                android:id="@+id/sp_enum_LED_Color"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:entries="@array/enum_LED_Color" />
+        </RelativeLayout>
+
+
+        <!-- LED_R(数值可写) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="LED_R" />
+
+            <TextView
+                android:id="@+id/tv_data_LED_R"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_data_LED_R"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/sb_data_LED_R"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:max="254" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="254"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!-- LED_G(数值可写) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="LED_G" />
+
+            <TextView
+                android:id="@+id/tv_data_LED_G"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_data_LED_G"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/sb_data_LED_G"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:max="254" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="254"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!-- LED_B(数值可写) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="LED_B" />
+
+            <TextView
+                android:id="@+id/tv_data_LED_B"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_data_LED_B"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/sb_data_LED_B"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:max="254" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="254"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!-- 设定电机转速(数值可写) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="电机" />
+
+            <TextView
+                android:id="@+id/tv_data_Motor_Speed"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_data_Motor_Speed"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-5"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/sb_data_Motor_Speed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:max="7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!-- 温度(数值只读) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:text="温度" />
+
+            <TextView
+                android:id="@+id/tv_data_Temperature"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="end"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <!-- 湿度(数值只读) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:text="湿度" />
+
+            <TextView
+                android:id="@+id/tv_data_Humidity"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="end"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- 湿度(数值只读) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:text="红外感应" />
+
+            <Switch
+                android:enabled="false"
+                android:id="@+id/sw_data_Infra"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="end" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
